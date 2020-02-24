@@ -28,7 +28,7 @@ sess.run(tf.global_variables_initializer())
 
 # Fit the line
 for step in range(2001):
-    cost_val, W_val, b_val, _ = sess.run([cost, W, b, train], feed_dict={X: [1, 2, 3, 4, 5], Y: [2.1, 3.1, 4.1, 5.1, 6.1]}) # feed_dict를 이용하여 데이터 전달! python dict
+    cost_val, W_val, b_val, _ = sess.run([cost, W, b, train], feed_dict={X: [1, 2, 3, 4, 5], Y: [2.1, 3.1, 4.1, 5.1, 6.1]})  # feed_dict를 이용하여 데이터 전달! python dict
     if step % 20 == 0:
         print(step, cost_val, W_val, b_val)
 

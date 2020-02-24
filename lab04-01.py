@@ -22,7 +22,7 @@ w3 = tf.Variable(tf.random_normal([1]), name='weight3')
 b = tf.Variable(tf.random_normal([1]), name='bias')
 
 # Hypothesis H(x) = x1 * w1 + x2 * w2 + x3 * w3 + b
-hypothesis = x1 * w1 + x2 * w2 + x3 * w3 + b
+hypothesis = (x1 * w1) + (x2 * w2) + (x3 * w3) + b
 
 # cost/loss function
 cost = tf.reduce_mean(tf.square(hypothesis - Y))

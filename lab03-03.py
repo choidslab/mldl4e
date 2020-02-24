@@ -4,7 +4,7 @@ import tensorflow as tf
 X = [1, 2, 3]
 Y = [1, 2, 3]
 
-W = tf.Variable(5.0)
+W = tf.Variable(-3.0)
 
 hypothesis = W * X
 
